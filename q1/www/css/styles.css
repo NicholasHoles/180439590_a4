@@ -1,0 +1,337 @@
+/* tablet */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.content {
+  margin: auto;
+  max-width: 935px;
+}
+
+.avatar {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 293px;
+  padding: 0 4px;
+}
+
+.avatar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.avatar_modal {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 32px;
+  padding: 0 4px;
+  margin-top: 10px;
+}
+
+.avatar_modal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.likes {
+  width: 100px;
+}
+
+.likes_count {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.saved {
+  margin-top: 4px;
+  margin-left: 70%;
+  width: 35px;
+}
+
+.time {
+  margin-left: 32px;
+  color: grey;
+}
+
+.foot_time {
+  margin-left: 19px;
+  color: grey;
+}
+
+.reply {
+  font-weight: bold;
+  color: grey;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.name {
+  padding-top: 50px;
+  text-align: left;
+  font-family: Verdana, Arial;
+  font-size: 28px;
+}
+
+.bio {
+  padding-top: 50px;
+  text-align: left;
+  font-family: Verdana, Arial;
+  font-size: 14px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.footer {
+  margin-top: 160px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 293px;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.columnbox {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.columnbox2 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 335px;
+  max-height: 600px;
+  padding-bottom: 600px;
+  background-color: white;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.column_modal {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8px;
+}
+
+.myImg {
+  width: 600px;
+  height: 600px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.row_modal {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.row_small {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 350px;
+  padding: 0 4px;
+  display: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 935px) {
+  .row_modal {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 350px;
+    padding: 0 4px;
+    display: block;
+  }
+
+  .row_small {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 293px;
+  }
+  .avatar {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 293px;
+  }
+
+  .myImg {
+    width: 342px;
+    height: 342px;
+  }
+
+  .columnbox {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+  }
+
+  .columnbox2 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 350px;
+    max-height: 600px;
+    padding-bottom: 600px;
+    background-color: white;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .column_modal {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+    background-color: white;
+  }
+
+  .avatar_modal {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 32px;
+    padding: 0 4px;
+    margin-top: 10px;
+  }
+
+  .avatar_modal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .user {
+    font-weight: bold;
+  }
+
+  .time {
+    margin-left: 32px;
+    color: grey;
+  }
+
+  .reply {
+    font-weight: bold;
+    color: grey;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .name {
+    padding-top: 50px;
+    text-align: left;
+    font-family: Verdana, Arial;
+    font-size: 28px;
+  }
+
+  .likes_count {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  .foot_time {
+    margin-left: 5px;
+    color: grey;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 624px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 293px;
+  }
+  .avatar {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 293px;
+  }
+
+}
